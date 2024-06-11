@@ -1,7 +1,9 @@
+import { State } from "./state.interface";
+
 export interface Record {
-  name: string;
+  name: string
   createdOn: Date;
-  beforeState: BeforeAfterState;
-  afterState: BeforeAfterState;
-  frequencyCount: FrequencyCount;
+  beforeState: State;
+  afterState: State;
+  count: number;
 }
